@@ -1,5 +1,5 @@
 from PIL import Image
-import os
+import os, sys
 
 replace = list(" -.'rTYUIO&")
 
@@ -24,3 +24,8 @@ def convert_to_ascii(path: str) -> str:
         output += "\n"
 
     return output
+
+
+if __name__ == "__main__":
+    ascii_output = convert_to_ascii(sys.argv[1])
+    print(ascii_output)
