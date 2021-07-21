@@ -1,5 +1,6 @@
 from PIL import Image
-import os, sys
+import os
+import sys
 
 replace = list(" -.'rTYUIO&")
 
